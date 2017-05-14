@@ -536,6 +536,7 @@
 				1981CE261EC83DF800DCE6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1981CE271EC83DF800DCE6EE /* Build configuration list for PBXNativeTarget "PushYellTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +545,7 @@
 				1981CE291EC83DF800DCE6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1981CE2A1EC83DF800DCE6EE /* Build configuration list for PBXNativeTarget "PushYellUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +554,7 @@
 				1981CE2C1EC83DF800DCE6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
