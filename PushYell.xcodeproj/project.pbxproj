@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1981CDFD1EC83DF700DCE6EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CDFC1EC83DF700DCE6EE /* AppDelegate.swift */; };
+		1981CDFF1EC83DF700DCE6EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CDFE1EC83DF700DCE6EE /* ViewController.swift */; };
+		1981CE021EC83DF700DCE6EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1981CE001EC83DF700DCE6EE /* Main.storyboard */; };
+		1981CE051EC83DF800DCE6EE /* PushYell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1981CE031EC83DF800DCE6EE /* PushYell.xcdatamodeld */; };
+		1981CE071EC83DF800DCE6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1981CE061EC83DF800DCE6EE /* Assets.xcassets */; };
+		1981CE0A1EC83DF800DCE6EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1981CE081EC83DF800DCE6EE /* LaunchScreen.storyboard */; };
+		1981CE151EC83DF800DCE6EE /* PushYellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CE141EC83DF800DCE6EE /* PushYellTests.swift */; };
+		1981CE201EC83DF800DCE6EE /* PushYellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CE1F1EC83DF800DCE6EE /* PushYellUITests.swift */; };
+		1981CE301EC83F7800DCE6EE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CE2F1EC83F7800DCE6EE /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1981CE111EC83DF800DCE6EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1981CDF11EC83DF700DCE6EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1981CDF81EC83DF700DCE6EE;
+			remoteInfo = PushYell;
+		};
+		1981CE1C1EC83DF800DCE6EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1981CDF11EC83DF700DCE6EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1981CDF81EC83DF700DCE6EE;
+			remoteInfo = PushYell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1981CDF91EC83DF700DCE6EE /* PushYell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushYell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1981CDFC1EC83DF700DCE6EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1981CDFE1EC83DF700DCE6EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1981CE011EC83DF700DCE6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1981CE041EC83DF800DCE6EE /* PushYell.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PushYell.xcdatamodel; sourceTree = "<group>"; };
+		1981CE061EC83DF800DCE6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1981CE091EC83DF800DCE6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1981CE0B1EC83DF800DCE6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1981CE101EC83DF800DCE6EE /* PushYellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushYellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1981CE141EC83DF800DCE6EE /* PushYellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushYellTests.swift; sourceTree = "<group>"; };
+		1981CE161EC83DF800DCE6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1981CE1B1EC83DF800DCE6EE /* PushYellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushYellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1981CE1F1EC83DF800DCE6EE /* PushYellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushYellUITests.swift; sourceTree = "<group>"; };
+		1981CE211EC83DF800DCE6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1981CE2F1EC83F7800DCE6EE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1981CDF61EC83DF700DCE6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1981CE0D1EC83DF800DCE6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1981CE181EC83DF800DCE6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1981CDF01EC83DF700DCE6EE = {
+			isa = PBXGroup;
+			children = (
+				1981CDFB1EC83DF700DCE6EE /* PushYell */,
+				1981CE131EC83DF800DCE6EE /* PushYellTests */,
+				1981CE1E1EC83DF800DCE6EE /* PushYellUITests */,
+				1981CDFA1EC83DF700DCE6EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1981CDFA1EC83DF700DCE6EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1981CDF91EC83DF700DCE6EE /* PushYell.app */,
+				1981CE101EC83DF800DCE6EE /* PushYellTests.xctest */,
+				1981CE1B1EC83DF800DCE6EE /* PushYellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1981CDFB1EC83DF700DCE6EE /* PushYell */ = {
+			isa = PBXGroup;
+			children = (
+				1981CE2E1EC83F5300DCE6EE /* delegate */,
+				1981CE2D1EC83F3E00DCE6EE /* viewcontrollers */,
+				1981CE001EC83DF700DCE6EE /* Main.storyboard */,
+				1981CE061EC83DF800DCE6EE /* Assets.xcassets */,
+				1981CE081EC83DF800DCE6EE /* LaunchScreen.storyboard */,
+				1981CE0B1EC83DF800DCE6EE /* Info.plist */,
+				1981CE031EC83DF800DCE6EE /* PushYell.xcdatamodeld */,
+			);
+			path = PushYell;
+			sourceTree = "<group>";
+		};
+		1981CE131EC83DF800DCE6EE /* PushYellTests */ = {
+			isa = PBXGroup;
+			children = (
+				1981CE141EC83DF800DCE6EE /* PushYellTests.swift */,
+				1981CE161EC83DF800DCE6EE /* Info.plist */,
+			);
+			path = PushYellTests;
+			sourceTree = "<group>";
+		};
+		1981CE1E1EC83DF800DCE6EE /* PushYellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1981CE1F1EC83DF800DCE6EE /* PushYellUITests.swift */,
+				1981CE211EC83DF800DCE6EE /* Info.plist */,
+			);
+			path = PushYellUITests;
+			sourceTree = "<group>";
+		};
+		1981CE2D1EC83F3E00DCE6EE /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				1981CDFE1EC83DF700DCE6EE /* ViewController.swift */,
+				1981CE2F1EC83F7800DCE6EE /* MainViewController.swift */,
+			);
+			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		1981CE2E1EC83F5300DCE6EE /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1981CDFC1EC83DF700DCE6EE /* AppDelegate.swift */,
+			);
+			name = delegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1981CDF81EC83DF700DCE6EE /* PushYell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1981CE241EC83DF800DCE6EE /* Build configuration list for PBXNativeTarget "PushYell" */;
+			buildPhases = (
+				1981CDF51EC83DF700DCE6EE /* Sources */,
+				1981CDF61EC83DF700DCE6EE /* Frameworks */,
+				1981CDF71EC83DF700DCE6EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushYell;
+			productName = PushYell;
+			productReference = 1981CDF91EC83DF700DCE6EE /* PushYell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1981CE0F1EC83DF800DCE6EE /* PushYellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1981CE271EC83DF800DCE6EE /* Build configuration list for PBXNativeTarget "PushYellTests" */;
+			buildPhases = (
+				1981CE0C1EC83DF800DCE6EE /* Sources */,
+				1981CE0D1EC83DF800DCE6EE /* Frameworks */,
+				1981CE0E1EC83DF800DCE6EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1981CE121EC83DF800DCE6EE /* PBXTargetDependency */,
+			);
+			name = PushYellTests;
+			productName = PushYellTests;
+			productReference = 1981CE101EC83DF800DCE6EE /* PushYellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1981CE1A1EC83DF800DCE6EE /* PushYellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1981CE2A1EC83DF800DCE6EE /* Build configuration list for PBXNativeTarget "PushYellUITests" */;
+			buildPhases = (
+				1981CE171EC83DF800DCE6EE /* Sources */,
+				1981CE181EC83DF800DCE6EE /* Frameworks */,
+				1981CE191EC83DF800DCE6EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1981CE1D1EC83DF800DCE6EE /* PBXTargetDependency */,
+			);
+			name = PushYellUITests;
+			productName = PushYellUITests;
+			productReference = 1981CE1B1EC83DF800DCE6EE /* PushYellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1981CDF11EC83DF700DCE6EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "山田尚吾";
+				TargetAttributes = {
+					1981CDF81EC83DF700DCE6EE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 77MXZW87XD;
+						ProvisioningStyle = Automatic;
+					};
+					1981CE0F1EC83DF800DCE6EE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 77MXZW87XD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1981CDF81EC83DF700DCE6EE;
+					};
+					1981CE1A1EC83DF800DCE6EE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 77MXZW87XD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1981CDF81EC83DF700DCE6EE;
+					};
+				};
+			};
+			buildConfigurationList = 1981CDF41EC83DF700DCE6EE /* Build configuration list for PBXProject "PushYell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1981CDF01EC83DF700DCE6EE;
+			productRefGroup = 1981CDFA1EC83DF700DCE6EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1981CDF81EC83DF700DCE6EE /* PushYell */,
+				1981CE0F1EC83DF800DCE6EE /* PushYellTests */,
+				1981CE1A1EC83DF800DCE6EE /* PushYellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1981CDF71EC83DF700DCE6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1981CE0A1EC83DF800DCE6EE /* LaunchScreen.storyboard in Resources */,
+				1981CE071EC83DF800DCE6EE /* Assets.xcassets in Resources */,
+				1981CE021EC83DF700DCE6EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1981CE0E1EC83DF800DCE6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1981CE191EC83DF800DCE6EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1981CDF51EC83DF700DCE6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1981CE051EC83DF800DCE6EE /* PushYell.xcdatamodeld in Sources */,
+				1981CDFF1EC83DF700DCE6EE /* ViewController.swift in Sources */,
+				1981CDFD1EC83DF700DCE6EE /* AppDelegate.swift in Sources */,
+				1981CE301EC83F7800DCE6EE /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1981CE0C1EC83DF800DCE6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1981CE151EC83DF800DCE6EE /* PushYellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1981CE171EC83DF800DCE6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1981CE201EC83DF800DCE6EE /* PushYellUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1981CE121EC83DF800DCE6EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1981CDF81EC83DF700DCE6EE /* PushYell */;
+			targetProxy = 1981CE111EC83DF800DCE6EE /* PBXContainerItemProxy */;
+		};
+		1981CE1D1EC83DF800DCE6EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1981CDF81EC83DF700DCE6EE /* PushYell */;
+			targetProxy = 1981CE1C1EC83DF800DCE6EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1981CE001EC83DF700DCE6EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1981CE011EC83DF700DCE6EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1981CE081EC83DF800DCE6EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1981CE091EC83DF800DCE6EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1981CE221EC83DF800DCE6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1981CE231EC83DF800DCE6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1981CE251EC83DF800DCE6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77MXZW87XD;
+				INFOPLIST_FILE = PushYell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shogo.PushYell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1981CE261EC83DF800DCE6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77MXZW87XD;
+				INFOPLIST_FILE = PushYell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shogo.PushYell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1981CE281EC83DF800DCE6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 77MXZW87XD;
+				INFOPLIST_FILE = PushYellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shogo.PushYellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushYell.app/PushYell";
+			};
+			name = Debug;
+		};
+		1981CE291EC83DF800DCE6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 77MXZW87XD;
+				INFOPLIST_FILE = PushYellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shogo.PushYellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushYell.app/PushYell";
+			};
+			name = Release;
+		};
+		1981CE2B1EC83DF800DCE6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 77MXZW87XD;
+				INFOPLIST_FILE = PushYellUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shogo.PushYellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PushYell;
+			};
+			name = Debug;
+		};
+		1981CE2C1EC83DF800DCE6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 77MXZW87XD;
+				INFOPLIST_FILE = PushYellUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.shogo.PushYellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PushYell;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1981CDF41EC83DF700DCE6EE /* Build configuration list for PBXProject "PushYell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1981CE221EC83DF800DCE6EE /* Debug */,
+				1981CE231EC83DF800DCE6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1981CE241EC83DF800DCE6EE /* Build configuration list for PBXNativeTarget "PushYell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1981CE251EC83DF800DCE6EE /* Debug */,
+				1981CE261EC83DF800DCE6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1981CE271EC83DF800DCE6EE /* Build configuration list for PBXNativeTarget "PushYellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1981CE281EC83DF800DCE6EE /* Debug */,
+				1981CE291EC83DF800DCE6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1981CE2A1EC83DF800DCE6EE /* Build configuration list for PBXNativeTarget "PushYellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1981CE2B1EC83DF800DCE6EE /* Debug */,
+				1981CE2C1EC83DF800DCE6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1981CE031EC83DF800DCE6EE /* PushYell.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1981CE041EC83DF800DCE6EE /* PushYell.xcdatamodel */,
+			);
+			currentVersion = 1981CE041EC83DF800DCE6EE /* PushYell.xcdatamodel */;
+			path = PushYell.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1981CDF11EC83DF700DCE6EE /* Project object */;
+}
