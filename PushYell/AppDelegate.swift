@@ -17,6 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if #available(iOS 8.0, *){
+            //iOS8以上の場合
+            let notiSettings = UIUserNotificationSettings(types: [.alert,.sound,.badge], categories: nil)
+            application.registerUserNotificationSettings(notiSettings)
+            application.registerForRemoteNotifications()
+            
+        }else{
+            //iOS7以前
+        application.registerForRemoteNotifications( matching: [.alert,.sound,.badge] )
+        }
         return true
     }
 

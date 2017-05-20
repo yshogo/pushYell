@@ -24,12 +24,12 @@ class MainViewController: ViewController {
         // 通知自体の設定
         let content = UNMutableNotificationContent()
         
-        content.title = NSString.localizedUserNotificationString(forKey: "通知タイトル", arguments: nil)
-        content.body = NSString.localizedUserNotificationString(forKey: "通知するメッセージ", arguments: nil)
+        content.title = NSString.localizedUserNotificationString(forKey: "明日になりました", arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: "正常に動作したね！やったね！", arguments: nil)
         content.sound = UNNotificationSound.default()
         
-        // アプリを起動して5秒後に通知を送る
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        //日付をトリガーとする
+        let trigger = UNCalendarNotificationTrigger(dateMatching: DateComponents(year:2017, month: 5, day: 21), repeats: true)
         
         let request = UNNotificationRequest(identifier: "my-notification", content: content, trigger: trigger)
         
@@ -45,5 +45,4 @@ class MainViewController: ViewController {
         super.didReceiveMemoryWarning()
         
     }
-
 }
