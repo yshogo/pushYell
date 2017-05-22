@@ -9,7 +9,7 @@
 import UIKit
 import UserNotifications
 
-class MainViewController: ViewController {
+class MainViewController: ViewController ,UITextFieldDelegate,UITextViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,5 +43,12 @@ class MainViewController: ViewController {
                 // エラー処理
             }
         }
+    }
+    
+    //キーボードを閉じる
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
     }
 }

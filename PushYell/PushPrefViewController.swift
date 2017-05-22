@@ -9,16 +9,20 @@
 import UIKit
 
 class PushPrefViewController: MainViewController {
+    
+    @IBOutlet weak var messageTextView: UITextView!
+    @IBOutlet weak var prefTimeTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        prefTimeTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func onEnter(_ sender: Any) {
+    }
 }
