@@ -17,6 +17,7 @@
 		1981CE201EC83DF800DCE6EE /* PushYellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CE1F1EC83DF800DCE6EE /* PushYellUITests.swift */; };
 		1981CE301EC83F7800DCE6EE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CE2F1EC83F7800DCE6EE /* MainViewController.swift */; };
 		19FBCD311ED2913300B5597A /* LocalPushDataProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBCD301ED2913300B5597A /* LocalPushDataProperty.swift */; };
+		19FBCD331ED292A600B5597A /* PushPrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBCD321ED292A600B5597A /* PushPrefViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1981CE211EC83DF800DCE6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1981CE2F1EC83F7800DCE6EE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		19FBCD301ED2913300B5597A /* LocalPushDataProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPushDataProperty.swift; sourceTree = "<group>"; };
+		19FBCD321ED292A600B5597A /* PushPrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushPrefViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				1981CDFE1EC83DF700DCE6EE /* ViewController.swift */,
 				1981CE2F1EC83F7800DCE6EE /* MainViewController.swift */,
+				19FBCD321ED292A600B5597A /* PushPrefViewController.swift */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				1981CDFF1EC83DF700DCE6EE /* ViewController.swift in Sources */,
 				1981CDFD1EC83DF700DCE6EE /* AppDelegate.swift in Sources */,
 				1981CE301EC83F7800DCE6EE /* MainViewController.swift in Sources */,
+				19FBCD331ED292A600B5597A /* PushPrefViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
