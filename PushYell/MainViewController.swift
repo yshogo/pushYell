@@ -51,4 +51,15 @@ class MainViewController: ViewController ,UITextFieldDelegate,UITextViewDelegate
         textField.resignFirstResponder()
         return true
     }
+    
+    //画面にアラートを表示する
+    public func alert(title:String,messageText:String,okActition:UIAlertAction){
+        
+        let alert = UIAlertController(title: title, message: messageText, preferredStyle: .alert)
+        
+        alert.addAction(okActition)
+        
+        present(alert,animated: true, completion: nil)
+    }
+    
 }
