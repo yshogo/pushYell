@@ -16,6 +16,7 @@
 		1981CE151EC83DF800DCE6EE /* PushYellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CE141EC83DF800DCE6EE /* PushYellTests.swift */; };
 		1981CE201EC83DF800DCE6EE /* PushYellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CE1F1EC83DF800DCE6EE /* PushYellUITests.swift */; };
 		1981CE301EC83F7800DCE6EE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CE2F1EC83F7800DCE6EE /* MainViewController.swift */; };
+		19FBCD311ED2913300B5597A /* LocalPushDataProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FBCD301ED2913300B5597A /* LocalPushDataProperty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1981CE1F1EC83DF800DCE6EE /* PushYellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushYellUITests.swift; sourceTree = "<group>"; };
 		1981CE211EC83DF800DCE6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1981CE2F1EC83F7800DCE6EE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		19FBCD301ED2913300B5597A /* LocalPushDataProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalPushDataProperty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		1981CDFB1EC83DF700DCE6EE /* PushYell */ = {
 			isa = PBXGroup;
 			children = (
+				19FBCD2F1ED290E400B5597A /* propertys */,
 				1981CE2E1EC83F5300DCE6EE /* delegate */,
 				1981CE2D1EC83F3E00DCE6EE /* viewcontrollers */,
 				1981CE001EC83DF700DCE6EE /* Main.storyboard */,
@@ -145,6 +148,14 @@
 				1981CDFC1EC83DF700DCE6EE /* AppDelegate.swift */,
 			);
 			name = delegate;
+			sourceTree = "<group>";
+		};
+		19FBCD2F1ED290E400B5597A /* propertys */ = {
+			isa = PBXGroup;
+			children = (
+				19FBCD301ED2913300B5597A /* LocalPushDataProperty.swift */,
+			);
+			name = propertys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19FBCD311ED2913300B5597A /* LocalPushDataProperty.swift in Sources */,
 				1981CE051EC83DF800DCE6EE /* PushYell.xcdatamodeld in Sources */,
 				1981CDFF1EC83DF700DCE6EE /* ViewController.swift in Sources */,
 				1981CDFD1EC83DF700DCE6EE /* AppDelegate.swift in Sources */,

@@ -13,7 +13,14 @@ class MainViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
         
+    }
+    
+    public func localpush(pushData:LocalPushDataProperty){
         // 通知を使用可能にする設定
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert, .sound, .badge]) {
@@ -24,14 +31,11 @@ class MainViewController: ViewController {
         // 通知自体の設定
         let content = UNMutableNotificationContent()
         
-        content.title = NSString.localizedUserNotificationString(forKey: "明日になりました", arguments: nil)
-        content.body = NSString.localizedUserNotificationString(forKey: "正常に動作したね！やったね！", arguments: nil)
+        content.title = NSString.localizedUserNotificationString(forKey: pushData.title!, arguments: nil)
+        content.body = NSString.localizedUserNotificationString(forKey: pushData.message!, arguments: nil)
         content.sound = UNNotificationSound.default()
         
-        //日付をトリガーとする
-        let trigger = UNCalendarNotificationTrigger(dateMatching: DateComponents(year:2017, month: 5, day: 21), repeats: true)
-        
-        let request = UNNotificationRequest(identifier: "my-notification", content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: "my-notification", content: content, trigger: pushData.trigger)
         
         // 通知を登録
         center.add(request) { (error : Error?) in
@@ -39,10 +43,5 @@ class MainViewController: ViewController {
                 // エラー処理
             }
         }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
     }
 }
