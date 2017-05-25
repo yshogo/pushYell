@@ -13,11 +13,26 @@ class PushPrefViewController: MainViewController {
     
     @IBOutlet weak var messageTextView: UITextView!
     @IBOutlet weak var prefTimeTextField: UITextField!
-
+    
+    var numberPicker:UIPickerView = UIPickerView()
+    var everyTomePickerDatasource:EveryTimePicker?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         prefTimeTextField.delegate = self
+        
+        initDataSource()
+    }
+    
+    private func initDataSource(){
+        everyTomePickerDatasource = EveryTimePicker()
+        numberPicker.dataSource = everyTomePickerDatasource
+        numberPicker.delegate = everyTomePickerDatasource
+        numberPicker.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 150.0)
+        
+        prefTimeTextField.inputView = numberPicker
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,5 +55,11 @@ class PushPrefViewController: MainViewController {
         
         self.alert(title: "完了", messageText: "登録しました", okActition: okAction)
         
+    }
+    
+    private func getNumner(text:String, delimitter:String) -> Int{
+        
+        
+        return -1
     }
 }

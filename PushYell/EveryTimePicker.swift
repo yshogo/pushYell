@@ -17,6 +17,8 @@ class EveryTimePicker:NSObject,UIPickerViewDelegate,UIPickerViewDataSource{
     var delegate:UIPickerView?
     var dataSource:UIPickerView?
     
+    var textField:UITextField?
+    
     //pickerの表示列
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         
@@ -37,16 +39,21 @@ class EveryTimePicker:NSObject,UIPickerViewDelegate,UIPickerViewDataSource{
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if component == 0{
-            return getPickerText(count: hour)[row]
+            return getPickerText(count: hour)[row] + "時"
         }
         
-        return getPickerText(count: minute)[row]
+        return getPickerText(count: minute)[row] + "分"
     }
     
     //Picker選択時
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        print("回りました")
+        guard let textField = textField else {
+            return
+        }
+        
+        textField.text = self.pickerView(pickerView, titleForRow: pickerView.selectedRow(inComponent: 0), forComponent: 0)
+        
     }
 
     //表示テキストを作成する
@@ -54,8 +61,8 @@ class EveryTimePicker:NSObject,UIPickerViewDelegate,UIPickerViewDataSource{
         
         var text:Array<String> = []
         
-        var i = 1
-        for _ in 1...count{
+        var i = 0
+        for _ in 0...count{
             text.append(String(i))
             i += 1
         }
