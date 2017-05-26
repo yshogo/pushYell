@@ -52,7 +52,9 @@ class EveryTimePicker:NSObject,UIPickerViewDelegate,UIPickerViewDataSource{
             return
         }
         
-        textField.text = self.pickerView(pickerView, titleForRow: pickerView.selectedRow(inComponent: 0), forComponent: 0)
+        let textFiledText =  self.pickerView(pickerView, titleForRow: pickerView.selectedRow(inComponent: 0), forComponent: 0)! +  self.pickerView(pickerView, titleForRow: pickerView.selectedRow(inComponent: 1), forComponent: 1)!
+        
+        textField.text = textFiledText
         
     }
 
