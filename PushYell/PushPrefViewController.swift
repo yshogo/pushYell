@@ -23,7 +23,6 @@ class PushPrefViewController: MainViewController {
         super.viewDidLoad()
 
         prefTimeTextField.delegate = self
-        
         initDataSource()
     }
     
@@ -62,10 +61,30 @@ class PushPrefViewController: MainViewController {
 
     @IBAction func onEnter(_ sender: Any) {
         
+        guard prefTimeTextField.text != nil else {
+            
+            let okAction = UIAlertAction(title: "ok", style: .default, handler:{
+                (action:UIAlertAction) -> Void in
+                
+            })
+            
+            alert(title: "エラー", messageText: "日付が入力されていません", okActition: okAction)
+            
+            return
+        }
+        
+        
         let pushData = LocalPushDataProperty()
         pushData.title = "がんばって！"
         pushData.message = messageTextView.text + "をがんばって!"
-        pushData.trigger = UNCalendarNotificationTrigger(dateMatching: DateComponents(year:2017, month: 5, day: 24), repeats: true)
+        
+        let time = prefTimeTextField.text
+        let hour = getHour(text: time!, delimitter: "時")
+        let minute = getMinute(text: time!, delimitter: "分")
+        
+        let conpoments = DateComponents(hour: hour, minute: minute)
+        
+        pushData.trigger = UNCalendarNotificationTrigger(dateMatching:conpoments, repeats: true)
         
         localpush(pushData: pushData)
         
@@ -78,9 +97,28 @@ class PushPrefViewController: MainViewController {
         
     }
     
-    private func getNumner(text:String, delimitter:String) -> Int{
+    //時間を取得する
+    private func getHour(text:String, delimitter:String) -> Int{
         
+        let timeText = text.components(separatedBy: delimitter)
         
-        return -1
+        guard let hour = Int(timeText[0]) else {
+            return -1
+        }
+        
+        return hour
+    }
+    
+    //分を取得する
+    private func getMinute(text:String , delimitter:String) -> Int{
+        
+        let timeText = text.components(separatedBy: delimitter)[0]
+        
+        guard let minute = Int(timeText.substring(from: timeText.index(before: timeText.endIndex))) else {
+            
+            return -1
+        }
+        
+        return minute
     }
 }
