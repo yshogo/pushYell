@@ -24,6 +24,26 @@ class PushPrefViewController: MainViewController {
 
         prefTimeTextField.delegate = self
         initDataSource()
+        initTexkeyEndToolbar()
+    }
+    
+    private func initTexkeyEndToolbar(){
+        
+        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
+        toolbar.barStyle = UIBarStyle.default
+        
+        toolbar.sizeToFit()
+        
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: self, action: nil)
+        
+        let commitButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(PushPrefViewController.tappingCommit))
+        
+        toolbar.items = [spacer , commitButton]
+        messageTextView.inputAccessoryView = toolbar
+    }
+    
+    func tappingCommit(){
+        self.view.endEditing(true)
     }
     
     private func initDataSource(){
