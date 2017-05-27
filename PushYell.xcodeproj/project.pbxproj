@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194E4EE91ED918180088EE11 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194E4EE81ED918180088EE11 /* Social.framework */; };
 		1981CDFD1EC83DF700DCE6EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CDFC1EC83DF700DCE6EE /* AppDelegate.swift */; };
 		1981CDFF1EC83DF700DCE6EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CDFE1EC83DF700DCE6EE /* ViewController.swift */; };
 		1981CE021EC83DF700DCE6EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1981CE001EC83DF700DCE6EE /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		194E4EE81ED918180088EE11 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1981CDF91EC83DF700DCE6EE /* PushYell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushYell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1981CDFC1EC83DF700DCE6EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1981CDFE1EC83DF700DCE6EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194E4EE91ED918180088EE11 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		194E4EE71ED918180088EE11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				194E4EE81ED918180088EE11 /* Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1981CDF01EC83DF700DCE6EE = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +102,7 @@
 				1981CE131EC83DF800DCE6EE /* PushYellTests */,
 				1981CE1E1EC83DF800DCE6EE /* PushYellUITests */,
 				1981CDFA1EC83DF700DCE6EE /* Products */,
+				194E4EE71ED918180088EE11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
