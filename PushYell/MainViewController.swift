@@ -62,4 +62,16 @@ class MainViewController: ViewController ,UITextFieldDelegate,UITextViewDelegate
         present(alert,animated: true, completion: nil)
     }
     
+    //画面にアラートを表示する
+    public func alert(title:String,messageText:String,okActition:UIAlertAction,ngAction:UIAlertAction){
+        
+        let alert = UIAlertController(title: title, message: messageText, preferredStyle: .alert)
+        
+        alert.addAction(okActition)
+        alert.addAction(ngAction)
+        
+        present(alert,animated: true, completion: nil)
+    }
+
+    
 }

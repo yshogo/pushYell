@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import Social
 
 class PushPrefViewController: MainViewController {
     
@@ -108,12 +109,18 @@ class PushPrefViewController: MainViewController {
         
         localpush(pushData: pushData)
         
-        let okAction = UIAlertAction(title: "ok", style: .default, handler: {
+        let okAction = UIAlertAction(title: "はい", style: .default, handler: {
             (action:UIAlertAction!) -> Void in
+            
+            self.tweet()
+        })
+        
+        let cancelAction = UIAlertAction(title: "いいえ", style: .default, handler: {
+            (actiom:UIAlertAction) -> Void in
         })
         
         
-        self.alert(title: "完了", messageText: "登録しました", okActition: okAction)
+        self.alert(title: "完了", messageText: "登録しました\nTwitterに投稿しますか？", okActition: okAction, ngAction: cancelAction)
         
     }
     
@@ -140,5 +147,35 @@ class PushPrefViewController: MainViewController {
         }
         
         return minute
+    }
+    
+    
+    func tweet(){
+        
+        //ツイート可能かどうかチェック
+        if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter){
+            
+            let slc = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            
+            slc?.setInitialText("できていますかPushYellアプリテスト")
+            
+            //ツイート画面表示
+            present(slc!, animated: true, completion: {
+            })
+            
+            slc?.completionHandler = {
+                (result:SLComposeViewControllerResult) -> () in
+                switch result {
+                case SLComposeViewControllerResult.done:
+                    
+                    print("ツイートしたよ")
+                case SLComposeViewControllerResult.cancelled:
+                    
+                    print("キャンセルしたよ")
+                }
+            }
+        }else{
+            print("ツイートできませんでした")
+        }
     }
 }
