@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1907230E1EDA9D430046C485 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1907230D1EDA9D430046C485 /* HomeViewController.swift */; };
 		194E4EE91ED918180088EE11 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194E4EE81ED918180088EE11 /* Social.framework */; };
 		1981CDFD1EC83DF700DCE6EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CDFC1EC83DF700DCE6EE /* AppDelegate.swift */; };
 		1981CDFF1EC83DF700DCE6EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1981CDFE1EC83DF700DCE6EE /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1907230D1EDA9D430046C485 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		194E4EE81ED918180088EE11 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1981CDF91EC83DF700DCE6EE /* PushYell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushYell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1981CDFC1EC83DF700DCE6EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				1981CDFE1EC83DF700DCE6EE /* ViewController.swift */,
 				1981CE2F1EC83F7800DCE6EE /* MainViewController.swift */,
 				19FBCD321ED292A600B5597A /* PushPrefViewController.swift */,
+				1907230D1EDA9D430046C485 /* HomeViewController.swift */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				19FBCD311ED2913300B5597A /* LocalPushDataProperty.swift in Sources */,
 				1981CE051EC83DF800DCE6EE /* PushYell.xcdatamodeld in Sources */,
 				19FA06261ED47C1C0029A7C0 /* EveryTimePicker.swift in Sources */,
+				1907230E1EDA9D430046C485 /* HomeViewController.swift in Sources */,
 				1981CDFF1EC83DF700DCE6EE /* ViewController.swift in Sources */,
 				1981CDFD1EC83DF700DCE6EE /* AppDelegate.swift in Sources */,
 				1981CE301EC83F7800DCE6EE /* MainViewController.swift in Sources */,
