@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="に設定されています" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07x-AX-b4s">
-                                <rect key="frame" x="70" y="209" width="201" height="27"/>
+                                <rect key="frame" x="70" y="201" width="201" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -71,6 +71,11 @@
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="3gw-AP-kfl"/>
+                    <connections>
+                        <outlet property="editButton" destination="ubP-op-SLZ" id="hww-SF-xYN"/>
+                        <outlet property="setedNotificationTime" destination="Zyh-ge-3OD" id="CWM-9g-d8m"/>
+                        <outlet property="settingword" destination="07x-AX-b4s" id="jXp-f4-TJs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUV-TL-rxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

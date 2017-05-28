@@ -113,6 +113,7 @@ class PushPrefViewController: MainViewController {
         
         //ローカルに設定された時間を設定する
         userdefault.set(prefTimeTextField.text,forKey: "notificationTime")
+        userdefault.set(messageTextView.text,forKey:"message")
         
         let okAction = UIAlertAction(title: "はい", style: .default, handler: {
             (action:UIAlertAction!) -> Void in
