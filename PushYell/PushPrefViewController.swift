@@ -14,11 +14,13 @@ class PushPrefViewController: MainViewController {
     
     @IBOutlet weak var messageTextView: UITextView!
     @IBOutlet weak var prefTimeTextField: UITextField!
+    @IBOutlet weak var setedTimeTextView: UILabel!
     
     var numberPicker:UIPickerView = UIPickerView()
     var everyTomePickerDatasource:EveryTimePicker?
     
     var numberToolbar:UIToolbar = UIToolbar()
+    let userdefault = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,6 +110,9 @@ class PushPrefViewController: MainViewController {
         pushData.trigger = UNCalendarNotificationTrigger(dateMatching:conpoments, repeats: true)
         
         localpush(pushData: pushData)
+        
+        //ローカルに設定された時間を設定する
+        userdefault.set(prefTimeTextField.text,forKey: "notificationTime")
         
         let okAction = UIAlertAction(title: "はい", style: .default, handler: {
             (action:UIAlertAction!) -> Void in

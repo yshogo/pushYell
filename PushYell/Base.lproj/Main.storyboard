@@ -95,6 +95,7 @@
                     <connections>
                         <outlet property="messageTextView" destination="k8B-oI-dFb" id="1IF-xf-YbC"/>
                         <outlet property="prefTimeTextField" destination="Ir3-oS-1Aj" id="11A-9G-ObX"/>
+                        <outlet property="setedTimeTextView" destination="oGG-gA-GxY" id="TCN-Tw-Bfi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
