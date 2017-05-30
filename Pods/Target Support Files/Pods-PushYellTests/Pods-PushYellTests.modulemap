@@ -1,0 +1,6 @@
+framework module Pods_PushYellTests {
+  umbrella header "Pods-PushYellTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
