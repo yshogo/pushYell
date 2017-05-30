@@ -28,6 +28,15 @@ class PushPrefViewController: MainViewController {
         prefTimeTextField.delegate = self
         initDataSource()
         initTexkeyEndToolbar()
+        initData()
+    }
+    
+    private func initData(){
+        
+        if userdefault.object(forKey: "notificationTime") != nil{
+            messageTextView.text = userdefault.string(forKey: "message")
+            prefTimeTextField.text = userdefault.string(forKey: "notificationTime")
+        }
     }
     
     private func initTexkeyEndToolbar(){
@@ -121,12 +130,7 @@ class PushPrefViewController: MainViewController {
             self.tweet()
         })
         
-        let cancelAction = UIAlertAction(title: "いいえ", style: .default, handler: {
-            (actiom:UIAlertAction) -> Void in
-        })
-        
-        
-        self.alert(title: "完了", messageText: "登録しました\nTwitterに投稿しますか？", okActition: okAction, ngAction: cancelAction)
+        self.alert(title: "完了", messageText: "登録しました", okActition: okAction)
         
     }
     
@@ -175,13 +179,25 @@ class PushPrefViewController: MainViewController {
                 case SLComposeViewControllerResult.done:
                     
                     print("ツイートしたよ")
+                    self.backHomeViewController()
                 case SLComposeViewControllerResult.cancelled:
                     
                     print("キャンセルしたよ")
+                    self.backHomeViewController()
                 }
             }
         }else{
             print("ツイートできませんでした")
         }
+    }
+    
+    private func backHomeViewController(){
+        
+        let navigetionViewCotroller = self.navigationController!
+        let infoViewController = navigetionViewCotroller.viewControllers[navigetionViewCotroller.viewControllers.count - 2] as! HomeViewController
+        
+        infoViewController.initiarizeSetting()
+        _ = self.navigationController?.popViewController(animated: true)
+        
     }
 }

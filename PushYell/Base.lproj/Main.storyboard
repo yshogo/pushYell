@@ -44,7 +44,6 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WQi-Kf-FCO"/>
                                     <segue destination="BYZ-38-t0r" kind="push" id="WMh-id-W0Y"/>
                                 </connections>
                             </button>
@@ -56,7 +55,6 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="onEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y0f-7l-FYh"/>
                                     <segue destination="BYZ-38-t0r" kind="push" id="fGA-jh-rBf"/>
                                 </connections>
                             </button>
@@ -72,7 +70,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="3gw-AP-kfl"/>
                     <connections>
-                        <outlet property="editButton" destination="ubP-op-SLZ" id="hww-SF-xYN"/>
+                        <outlet property="editButton" destination="ubP-op-SLZ" id="GjT-QA-lcA"/>
+                        <outlet property="newButton" destination="9oo-Kc-uGV" id="YCr-zM-LB7"/>
                         <outlet property="setedNotificationTime" destination="Zyh-ge-3OD" id="CWM-9g-d8m"/>
                         <outlet property="settingword" destination="07x-AX-b4s" id="jXp-f4-TJs"/>
                     </connections>

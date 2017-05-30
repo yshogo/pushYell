@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MaterialComponents
 
 class HomeViewController: MainViewController {
 
     @IBOutlet weak var setedNotificationTime: UILabel!
     @IBOutlet weak var settingword: UILabel!
-    @IBOutlet weak var editButton: UIButton!
+    @IBOutlet weak var newButton: MDCButton!
+    @IBOutlet weak var editButton: MDCButton!
     
     
     override func viewDidLoad() {
@@ -21,15 +23,19 @@ class HomeViewController: MainViewController {
         initiarizeSetting()
     }
     
+    //初期設定
     func initiarizeSetting(){
         let userdefault = UserDefaults.standard
         
         if (userdefault.object(forKey: "notificationTime")) != nil{
             
             setedNotificationTime.text = userdefault.string(forKey: "notificationTime")
+            newButton.isEnabled = true
+            editButton.isEnabled = false
         }else{
             setedNotificationTime.text = ""
             settingword.text = ""
+            newButton.isEnabled = true
             editButton.isEnabled = false
         }
     }
