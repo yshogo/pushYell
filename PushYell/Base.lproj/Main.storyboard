@@ -22,24 +22,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XX時YY分" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyh-ge-3OD">
-                                <rect key="frame" x="95" y="170" width="129" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX時YY分" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyh-ge-3OD">
+                                <rect key="frame" x="95" y="157.5" width="129" height="32.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="VOb-kX-qs8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="に設定されています" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07x-AX-b4s">
-                                <rect key="frame" x="70" y="201" width="201" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="に設定されています" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07x-AX-b4s">
+                                <rect key="frame" x="70" y="200" width="201" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oo-Kc-uGV" customClass="MDCButton">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oo-Kc-uGV" customClass="MDCButton">
                                 <rect key="frame" x="70" y="260" width="180" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="rCc-rg-y2W"/>
+                                    <constraint firstAttribute="height" constant="59" id="tvL-Mn-JlM"/>
+                                </constraints>
                                 <state key="normal" title="登録する">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -47,10 +51,13 @@
                                     <segue destination="BYZ-38-t0r" kind="push" id="WMh-id-W0Y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubP-op-SLZ" customClass="MDCButton">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubP-op-SLZ" customClass="MDCButton">
                                 <rect key="frame" x="70" y="353" width="180" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="IbD-Bc-PAg"/>
+                                    <constraint firstAttribute="height" constant="59" id="YBe-Jf-Z9O"/>
+                                </constraints>
                                 <state key="normal" title="編集する">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -58,15 +65,28 @@
                                     <segue destination="BYZ-38-t0r" kind="push" id="fGA-jh-rBf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自分を応援しよう！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBM-mV-4UN">
-                                <rect key="frame" x="66" y="104" width="189" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自分を応援しよう！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBM-mV-4UN">
+                                <rect key="frame" x="82.5" y="104" width="156" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ubP-op-SLZ" firstAttribute="centerX" secondItem="ktT-Ya-RBv" secondAttribute="centerX" id="8f1-2G-lXb"/>
+                            <constraint firstItem="ubP-op-SLZ" firstAttribute="centerX" secondItem="ktT-Ya-RBv" secondAttribute="centerX" id="Cil-38-OZN"/>
+                            <constraint firstItem="ubP-op-SLZ" firstAttribute="top" secondItem="9oo-Kc-uGV" secondAttribute="bottom" constant="34" id="G0P-Ko-ZI9"/>
+                            <constraint firstItem="07x-AX-b4s" firstAttribute="leading" secondItem="ktT-Ya-RBv" secondAttribute="leadingMargin" constant="54" id="UVU-nj-z7Y"/>
+                            <constraint firstItem="Zyh-ge-3OD" firstAttribute="top" secondItem="HBM-mV-4UN" secondAttribute="bottom" constant="33" id="VFJ-fJ-QE9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="07x-AX-b4s" secondAttribute="trailing" constant="33" id="Xcc-vP-8FI"/>
+                            <constraint firstItem="07x-AX-b4s" firstAttribute="top" secondItem="Zyh-ge-3OD" secondAttribute="bottom" constant="10" id="cEs-4L-40T"/>
+                            <constraint firstItem="HBM-mV-4UN" firstAttribute="top" secondItem="8sP-XM-CKs" secondAttribute="bottom" constant="40" id="d9Z-O7-Lhu"/>
+                            <constraint firstItem="Zyh-ge-3OD" firstAttribute="centerX" secondItem="ktT-Ya-RBv" secondAttribute="centerX" id="eAA-Yj-m4Q"/>
+                            <constraint firstItem="9oo-Kc-uGV" firstAttribute="top" secondItem="07x-AX-b4s" secondAttribute="bottom" constant="40.5" id="vwy-8T-VWw"/>
+                            <constraint firstItem="HBM-mV-4UN" firstAttribute="centerX" secondItem="ktT-Ya-RBv" secondAttribute="centerX" id="wqW-t8-oN6"/>
+                            <constraint firstItem="9oo-Kc-uGV" firstAttribute="centerX" secondItem="ktT-Ya-RBv" secondAttribute="centerX" id="z9L-Ql-Iew"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3gw-AP-kfl"/>
                     <connections>
@@ -133,15 +153,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sl-Q9-VpP" customClass="MDCFlatButton">
-                                <rect key="frame" x="105.5" y="419" width="109" height="30"/>
-                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="109" id="nqI-EL-xsf"/>
-                                    <constraint firstAttribute="height" constant="30" id="pBg-2Z-EpP"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sl-Q9-VpP" customClass="MDCButton">
+                                <rect key="frame" x="106" y="419" width="108" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="設定する">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onEnter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQw-tn-fl2"/>
@@ -155,10 +171,12 @@
                             <constraint firstItem="Ir3-oS-1Aj" firstAttribute="top" secondItem="oGG-gA-GxY" secondAttribute="bottom" constant="8" id="5VC-jF-oDn"/>
                             <constraint firstItem="pL7-Nq-Eqg" firstAttribute="top" secondItem="fWc-Hh-JbR" secondAttribute="bottom" constant="23" id="6Kx-Za-zFw"/>
                             <constraint firstItem="9Sl-Q9-VpP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8A1-Af-WwO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Sl-Q9-VpP" secondAttribute="trailing" constant="90" id="DsO-aB-eUe"/>
                             <constraint firstItem="k8B-oI-dFb" firstAttribute="top" secondItem="Q5H-3p-DRx" secondAttribute="bottom" constant="8" id="KjF-Gm-36b"/>
                             <constraint firstItem="Q5H-3p-DRx" firstAttribute="top" secondItem="pL7-Nq-Eqg" secondAttribute="bottom" constant="43.5" id="YD2-9V-ANZ"/>
                             <constraint firstItem="Q5H-3p-DRx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="bUe-2L-ja1"/>
                             <constraint firstItem="9Sl-Q9-VpP" firstAttribute="top" secondItem="Ir3-oS-1Aj" secondAttribute="bottom" constant="23" id="d04-Zq-l1h"/>
+                            <constraint firstItem="9Sl-Q9-VpP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="em1-TB-xmF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Q5H-3p-DRx" secondAttribute="trailing" constant="104" id="jEe-fh-U1d"/>
                             <constraint firstItem="k8B-oI-dFb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lMf-TO-JZ7"/>
                             <constraint firstItem="oGG-gA-GxY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qDn-Ux-vn3"/>

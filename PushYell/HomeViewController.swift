@@ -25,16 +25,19 @@ class HomeViewController: MainViewController {
     
     //初期設定
     func initiarizeSetting(){
+                
         let userdefault = UserDefaults.standard
         
         if (userdefault.object(forKey: "notificationTime")) != nil{
             
             setedNotificationTime.text = userdefault.string(forKey: "notificationTime")
-            newButton.isEnabled = true
-            editButton.isEnabled = false
+            newButton.isEnabled = false
+            editButton.isEnabled = true
+            
         }else{
             setedNotificationTime.text = ""
             settingword.text = ""
+            
             newButton.isEnabled = true
             editButton.isEnabled = false
         }

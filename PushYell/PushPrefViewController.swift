@@ -105,7 +105,6 @@ class PushPrefViewController: MainViewController {
             return
         }
         
-        
         let pushData = LocalPushDataProperty()
         pushData.title = "がんばって！"
         pushData.message = messageTextView.text + "をがんばって!"
