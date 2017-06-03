@@ -93,15 +93,9 @@ class PushPrefViewController: MainViewController {
 
     @IBAction func onEnter(_ sender: Any) {
         
-        guard prefTimeTextField.text != nil else {
+        guard prefTimeTextField.text != "" || messageTextView.text != "" else {
             
-            let okAction = UIAlertAction(title: "ok", style: .default, handler:{
-                (action:UIAlertAction) -> Void in
-                
-            })
-            
-            alert(title: "エラー", messageText: "日付が入力されていません", okActition: okAction)
-            
+            validationError()
             return
         }
         
@@ -197,6 +191,17 @@ class PushPrefViewController: MainViewController {
         
         infoViewController.initiarizeSetting()
         _ = self.navigationController?.popViewController(animated: true)
+        
+    }
+    
+    private func validationError(){
+    
+        let okAction = UIAlertAction(title: "ok", style: .default, handler:{
+            (action:UIAlertAction) -> Void in
+            
+        })
+        
+        alert(title: "エラー", messageText: "日付もしくは通知時間が設定されていません", okActition: okAction)
         
     }
 }
